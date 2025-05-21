@@ -64,10 +64,10 @@ sudo sysctl -p
 # Download and Install SonarQube
 if [ ! -d "/opt/sonarqube" ]; then
     echo "Downloading and installing SonarQube..."
-    wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.0.65466.zip
+    wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-25.5.0.107428.zip
     sudo apt install unzip -y
-    sudo unzip sonarqube-9.9.0.65466.zip -d /opt
-    sudo mv /opt/sonarqube-9.9.0.65466 /opt/sonarqube
+    sudo unzip sonarqube-25.5.0.107428.zip -d /opt
+    sudo mv /opt/sonarqube-25.5.0.107428 /opt/sonarqube
 else
     echo "SonarQube is already downloaded and installed."
 fi
